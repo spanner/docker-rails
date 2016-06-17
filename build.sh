@@ -1,9 +1,9 @@
 #!/bin/bash -e
 
 # Build and squash baseimage
-docker build -t docker-rails-base ./base
-ID=$(docker run -d docker-rails-base true)
-docker export $ID | docker import - docker-rails-base-squashed
+docker build -t rails4-base ./base
+ID=$(docker run -d rails4-base true)
+docker export $ID | docker import - rails4-base-squashed
 
 # Create onbuild image
-docker build -t docker-rails-onbuild ./onbuild
+docker build -t rails4-onbuild ./onbuild

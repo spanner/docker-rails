@@ -1,4 +1,5 @@
-FROM docker-rails-base-squashed
+# this is the export-import-flattened output of building ./base
+FROM rails4-base-squashed
 
 ENV RACK_ENV=production RAILS_ENV=production HOME=/home/app
 CMD ["/sbin/my_init"]
@@ -17,5 +18,5 @@ ONBUILD RUN mkdir -p db public/assets log tmp vendor && \
     "if chpst -u app bundle show sprockets; then \
       touch .env; source .env; \
       chpst -u app bundle exec rake assets:precompile \
-        SECRET_KEY_BASE=noop DATABASE_URL=postgres://noop ; \
+        SECRET_KEY_BASE=noop DATABASE_URL=mysql://noop ; \
     fi"

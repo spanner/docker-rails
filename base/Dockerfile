@@ -11,8 +11,7 @@ ENV APT_PACKAGES " \
   git imagemagick \
   gcc g++ make patch binutils libc6-dev \
   libjemalloc-dev libffi-dev libssl-dev libyaml-dev zlib1g-dev libgmp-dev \
-  libxml2-dev libxslt1-dev libpq-dev libreadline-dev libsqlite3-dev \
-"
+  libxml2-dev libxslt1-dev libmysqlclient-dev libreadline-dev"
 
 ENV APT_REMOVE_PACKAGES "cron openssh-server"
 

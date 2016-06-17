@@ -7,8 +7,7 @@ gem 'sidekiq'
 gem 'clockwork'
 
 # Ensure that gems with C lib dependencies work
-gem 'sqlite3'
-gem 'pg'
+gem 'mysql'
 gem 'nokogiri'
 gem 'sassc'
 
