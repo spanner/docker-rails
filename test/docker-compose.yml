@@ -1,7 +1,7 @@
 app:
   build: testapp
   environment:
-    - DATABASE_URL=postgresql://postgres:mysecretpassword@postgres/postgres
+    - DATABASE_URL=mysql2://test:test@box_testing
     - REDIS_URL=redis://redis
     - SECRET_KEY_BASE=noop
     - TEST_ENV=hey
@@ -9,8 +9,8 @@ app:
     - '8080:8080'
   links:
     - redis
-    - postgres
+    - mysql
 redis:
   image: redis:3
-postgres:
-  image: postgres:9.4
+mysql:
+  image: mysql:5.6
