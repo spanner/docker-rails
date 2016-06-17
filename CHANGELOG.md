@@ -2,6 +2,10 @@
 
 ## master (unreleased)
 
+## 2.2.2 (2016-06-17)
+
+- mysql client headers, much experimentation
+
 ## 2.2.1 (2016-06-03)
 
 - Add proper exit handling for Clockwork
