@@ -2,6 +2,10 @@
 
 ## master (unreleased)
 
+## 2.2.3 (2016-06-17)
+
+- testing and tinkering
+
 ## 2.2.2 (2016-06-17)
 
 - mysql client headers, much experimentation
