@@ -1,5 +1,6 @@
 # this is the export-import-flattened output of building ./base
-FROM rails4-base-squashed
+# so you have to run ./build.sh to chain this correctly
+FROM rails4-base-reimport
 
 ENV RACK_ENV=production RAILS_ENV=production HOME=/home/app
 CMD ["/sbin/my_init"]
