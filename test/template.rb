@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 # Components we want to test
 gem 'rails_12factor'
 gem 'rails_migrate_mutex'
@@ -7,7 +8,7 @@ gem 'sidekiq'
 gem 'clockwork'
 
 # Ensure that gems with C lib dependencies work
-gem 'mysql'
+gem 'mysql2'
 gem 'nokogiri'
 gem 'sassc'
 

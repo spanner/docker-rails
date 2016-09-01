@@ -2,13 +2,18 @@
 
 ## master (unreleased)
 
-## 2.2.3 (2016-06-17)
+## 2.4.1 (2016-09-01)
 
-- testing and tinkering
+- Fix asset precompilation when pg gem is not present
 
-## 2.2.2 (2016-06-17)
+## 2.4.0 (2016-08-31)
 
-- mysql client headers, much experimentation
+- Add support for mysql2 gem
+- Clean up README
+
+## 2.3.0 (2016-07-26)
+
+- Upgrade baseimage, rubygems, bundler and node
 
 ## 2.2.1 (2016-06-03)
 

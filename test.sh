@@ -48,8 +48,4 @@ RESULT=$(testapp_run node -p '1+1')
 testapp_run npm -v
 testapp_run bower -v
 
-# Check that asset gzipping works
-FILE="/home/app/webapp/public/assets/application-*.js"
-testapp_run bash -ec "gzip -dc < $FILE.gz |diff - $FILE"
-
 echo "Tests OK"
