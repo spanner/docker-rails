@@ -2,7 +2,7 @@
 # so you have to run ./build.sh to chain this correctly
 FROM rails4-base-reimport
 
-ENV RACK_ENV=production RAILS_ENV=production HOME=/home/app
+ENV HOME=/home/app
 CMD ["/sbin/my_init"]
 EXPOSE 3000
 WORKDIR /home/app/webapp

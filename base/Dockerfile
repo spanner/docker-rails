@@ -2,7 +2,7 @@ FROM phusion/baseimage:0.9.19
 
 ENV APT_PACKAGES " \
   git imagemagick ruby ruby-dev nodejs\
-  build-essentials \
+  gcc g++ make patch binutils libc6-dev \
   libjemalloc-dev libffi-dev libssl-dev libyaml-dev zlib1g-dev libgmp-dev \
   libxml2-dev libxslt1-dev libmysqlclient-dev libreadline-dev"
 
